@@ -11,4 +11,19 @@ class Post
     @@all_by_title << self
   end
   
+  def author_name
+    if @author == nil
+      return nil
+    else
+      @author.name
+    end
+  end
+  
+  def self.all
+    @@all
+  end
+  
+  def self.all_by_title
+    @@all_by_title
+  end
 end
